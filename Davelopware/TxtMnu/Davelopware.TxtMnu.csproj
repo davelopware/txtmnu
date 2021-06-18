@@ -24,6 +24,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -122,6 +123,7 @@
     <Compile Include="MenuEntrySubMenu.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MenuEntryWithData.cs" />
     <Compile Include="MenuSession.cs">
       <SubType>Code</SubType>
     </Compile>
