@@ -21,6 +21,8 @@ namespace Davelopware.TxtMnu
 {
 	public delegate void MenuEntrySelectedHandler(IMenuEntry entry, MenuSession session, Menu menu);
 
+	public delegate void MenuBeforeShowingHandler(MenuSession session, Menu menu);
+
 	public enum TextHAlign
 	{
 		Left,

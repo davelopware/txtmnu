@@ -42,6 +42,8 @@ namespace Davelopware.TxtMnu
 		private string _help;
 		private string _helpKey;
 
+		public event Davelopware.TxtMnu.MenuBeforeShowingHandler MenuBeforeShowing;
+
 		#region constructors
 
 		public Menu()
@@ -141,6 +143,9 @@ namespace Davelopware.TxtMnu
 		{
 			try
 			{
+				if (MenuBeforeShowing != null)
+					MenuBeforeShowing(session, this);
+
 				session.Write(_header);
 				int iCount = 1;
 				foreach (IMenuEntry entry in _entries)
