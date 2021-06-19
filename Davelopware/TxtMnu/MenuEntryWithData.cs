@@ -29,7 +29,7 @@ namespace Davelopware.TxtMnu
 		private string _key = string.Empty;
 		private string _name = string.Empty;
 		private string _help = string.Empty;
-		private T _data;
+		protected T _data;
 		private bool _visible = true;
 
 		#region constructors
@@ -62,6 +62,7 @@ namespace Davelopware.TxtMnu
 			return _name;
 		}
 
+		[Obsolete("string Name is deprecated, please use GetName() instead.")]
 		public virtual string Name
 		{
 			set { _name = value; }

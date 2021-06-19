@@ -60,6 +60,8 @@ namespace Davelopware.TxtMnu
 			return _name;
 		}
 
+		[Obsolete("string Name is deprecated, please use GetName() instead.")]
+
 		public virtual string Name
 		{
 			set { _name = value; }

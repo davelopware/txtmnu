@@ -69,6 +69,7 @@ namespace Davelopware.TxtMnu
 		/// <summary>
 		/// Gets the dynamic name if possible, otherwise the default, and sets the default
 		/// </summary>
+		[Obsolete("string Name is deprecated, please use GetName() instead.")]
 		public virtual string Name
 		{
 			set { _name = value; }

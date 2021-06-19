@@ -27,6 +27,9 @@ namespace Davelopware.TxtMnu
 		event MenuEntrySelectedHandler MenuEntrySelected;
 		string Key { get; set; }
 		string GetName(MenuSession session, Menu menu);
+
+		[Obsolete("string Name is deprecated, please use GetName() instead.")]
+
 		string Name { set; }
 		string Help { get; set; }
 		bool Visible { get; set; }
