@@ -17,6 +17,7 @@
  */
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Davelopware.TxtMnu
 {
@@ -136,5 +137,18 @@ namespace Davelopware.TxtMnu
 		}
 
 		#endregion
+
+		public List<T> AllOfType<T>()
+        {
+			List<T> items = new List<T>();
+			foreach(IMenuEntry me in _entries)
+            {
+				if (typeof(T).IsInstanceOfType(me))
+                {
+					items.Add((T)me);
+                }
+            }
+			return items;
+        }
 	}
 }

@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Davelopware/TxtMnu/obj/Debug
+/Davelopware/TxtMnu/MenuDevExperiment/obj/Debug
+/Davelopware/TxtMnu/bin/Debug
+/Davelopware/TxtMnu/MenuDevExperiment/obj/Release
+/.vs
+/Davelopware/TxtMnu/obj/Release
